@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Công nghệ số và Trí tuệ nhân tạo - Exercises</title>
+    <style>
+        :root {
+            --primary-color: #007acc;
+            --secondary-color: #3776ab;
+            --dark-color: #1e1e24;
+            --light-color: #f4f6f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .badge {
+            background-color: #e1f5fe;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin: 0 0 12px 0;
+            color: var(--dark-color);
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            margin: 0 0 20px 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dự án: Ứng dụng Công nghệ số và Trí tuệ nhân tạo</h1>
+        <p>Kho lưu trữ tài liệu, bài giảng và bài tập thực hành</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <span class="badge">Bài giảng 1</span>
+                <h3>Tổng quan về Công nghệ số & AI</h3>
+                <p>Khái niệm cốt lõi về chuyển đổi số, xu hướng phát triển và vai trò của Trí tuệ nhân tạo trong kỷ nguyên 4.0.</p>
+                <a href="#" class="btn">Xem tài liệu</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Bài giảng 2</span>
+                <h3>Tổ chức & Quản lý dữ liệu cá nhân</h3>
+                <p>Phương pháp số hóa, cấu trúc danh mục học tập và tối ưu hóa không gian lưu trữ tài liệu khoa học.</p>
+                <a href="#" class="btn">Làm bài tập</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Bài giảng 3</span>
+                <h3>Tư duy lập trình & Thuật toán tối ưu</h3>
+                <p>Rèn luyện tư duy logic qua các bài toán cấu trúc dữ liệu, giải thuật tìm kiếm, sắp xếp và tối ưu mã nguồn Python/C++.</p>
+                <a href="#" class="btn">Xem mã nguồn</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Bài giảng 4</span>
+                <h3>Xử lý tín hiệu số & Mô phỏng</h3>
+                <p>Ứng dụng lập trình và hệ thống công cụ mô phỏng để phân tích dữ liệu, kết nối lý thuyết viễn thông với thực tế.</p>
+                <a href="#" class="btn">Xem mô phỏng</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Bài giảng 5</span>
+                <h3>AI trong Kiểm thử phần mềm (QA)</h3>
+                <p>Tự động hóa kịch bản kiểm thử (Automation Testing), tối ưu phát hiện lỗi phần mềm bằng các mô hình học máy thông minh.</p>
+                <a href="#" class="btn">Thực hành ngay</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Bài giảng 6</span>
+                <h3>Xây dựng Dự án thực tế</h3>
+                <p>Hướng dẫn đóng gói các kiến thức công nghệ số và AI đã học thành một sản phẩm cụ thể và định hướng tương lai.</p>
+                <a href="#" class="btn">Nộp báo cáo</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 - Phát triển bởi Sinh viên UET | Điện tử Viễn thông</p>
+    </footer>
+
+</body>
+</html>
