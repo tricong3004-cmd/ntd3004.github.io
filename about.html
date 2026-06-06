@@ -3,35 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu - Portfolio</title>
+    <title>Giới thiệu | IC Profile - Hoàng Long Dũng</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="about.html" class="active">Giới thiệu</a></li>
-                <li><a href="exercises.html">Bài tập</a></li>
-                <li><a href="summary.html">Tổng kết</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="container">
-        <h2>Giới thiệu bản thân</h2>
-        <div class="about-grid">
-            <p>Mình hiện là sinh viên chuyên ngành kỹ thuật. Mình có niềm đam mê lớn với việc lập trình, xử lý dữ liệu và phát triển các giải pháp công nghệ sáng tạo.</p>
-            <h3>Kỹ năng & Công cụ</h3>
-            <ul>
-                <li>Ngôn ngữ: Python, MATLAB, HTML/CSS</li>
-                <li>Công cụ: Git, VS Code</li>
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">HLD_<span>CORE</span></div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a href="about.html" class="active">Giới thiệu</a></li>
+                <li class="nav-item"><a href="exercises.html">Bài tập</a></li>
+                <li class="nav-item"><a href="summary.html">Tổng kết</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+        <div class="page-header">
+            <h1>Hardware & System Profile</h1>
+            <p>> System.out.println("Thông tin nền tảng & Định hướng phát triển");_</p>
+        </div>
+
+        <div class="about-grid">
+            <!-- Khối nội dung chính bên trái -->
+            <div class="about-card">
+                
+                <!-- Khu vực chứa Ảnh và Thông tin cơ bản -->
+                <div class="profile-hero">
+                    <div class="profile-img-box">
+                        <!-- Tên tệp ảnh của bạn sẽ thay vào thuộc tính src dưới đây -->
+                        <img src="avatar.jpg" alt="Hoàng Long Dũng">
+                        <div class="status-dot"></div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <p>👤 <strong>Họ và tên:</strong> <span class="highlight-text">Hoàng Long Dũng</span></p>
+                        <p>🎓 <strong>Khóa học:</strong> K70</p>
+                        <p>🏛️ <strong>Chuyên ngành:</strong> Điện tử Viễn thông (CN9) - UET</p>
+                        <p>📍 <strong>Quê quán:</strong> Hà Nội</p>
+                        <p>🎯 <strong>Định hướng:</strong> <span class="tech-text">[Kỹ sư thiết kế Vi mạch - IC Design]</span></p>
+                    </div>
+                </div>
+
+                <h2 class="about-section-title">Học tập & Tầm nhìn chuyên môn</h2>
+                <p>Mục tiêu cốt lõi của tôi là làm chủ luồng thiết kế vi mạch (IC Design Flow) và hệ thống nhúng. Thông qua việc vận dụng các công cụ kỹ thuật số và trí tuệ nhân tạo, tôi định hướng xây dựng các giải pháp phần cứng tối ưu, từ kiến trúc tập lệnh đến mức độ vật lý.</p>
+                
+                <h2 class="about-section-title">Hoạt động ngoại khóa</h2>
+                <p>Hiện đang tham gia tích cực tại <strong>UETCHIP+</strong>. Đây là môi trường hoàn hảo để tôi trau dồi kiến thức thực tế về thiết kế mạch, lập trình vi điều khiển và phát triển kỹ năng làm việc nhóm với các dự án phần cứng chuyên sâu.</p>
+            </div>
+
+            <!-- Khối kỹ năng bên phải (Sidebar) -->
+            <div class="sidebar-space">
+                <div class="sidebar-card" style="margin-bottom: 2rem;">
+                    <h2 class="about-section-title" style="margin-top: 0;">Khối kiến thức nền tảng</h2>
+                    <ul class="interest-list">
+                        <li>Vật lý đại cương</li>
+                        <li>Kỹ thuật điện & Phân tích mạch</li>
+                        <li>Giải tích & Xử lý tín hiệu</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h2 class="about-section-title" style="margin-top: 0;">Công cụ & Kỹ năng số</h2>
+                    <ul class="skill-list">
+                        <li>Lập trình Python (NumPy)</li>
+                        <li>Mô phỏng MATLAB</li>
+                        <li>Google AI Pro & Khai thác Prompt</li>
+                        <li>Quản trị dự án (Trello/Kanban)</li>
+                    </ul>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+                <a href="index.html" class="cta-button secondary-btn" style="text-align: center;">&larr; Quay về trang chủ</a>
+                <a href="exercises.html" class="cta-button" style="text-align: center;">Xem sản phẩm bài tập &rarr;</a>
+            </div>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Portfolio của tôi.</p>
-    </footer>
 </body>
 </html>
